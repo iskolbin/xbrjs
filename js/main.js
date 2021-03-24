@@ -13,7 +13,7 @@ function onImageLoaded( inputCanvas ) {
 		original[i] = (data[index + 3] << 24) + (data[index + 2] << 16) + (data[index + 1] << 8) + data[index];
 	}
 
-	var result = window.Xbr.superxbr(original, inputCanvas.width, inputCanvas.height);
+	var result = window.document.superxbr(original, inputCanvas.width, inputCanvas.height);
 	var outputCanvas = document.getElementById( "output-canvas" );
 	var octx = outputCanvas.getContext('2d');
 	outputCanvas.width = inputCanvas.width * 2;
